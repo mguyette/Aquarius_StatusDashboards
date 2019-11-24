@@ -1,0 +1,3 @@
+Function NCB19020038Statuses(ByRef Error As String) As DataTable
+  NCB19020038Statuses = DashboardDataTableScript(Error, "35525340", "'Depth','SpCond','WO','WX','PH','WTFNU','TW','rClor'")
+End Function
