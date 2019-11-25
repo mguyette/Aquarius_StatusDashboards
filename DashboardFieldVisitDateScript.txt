@@ -1,0 +1,15 @@
+Function DashboardFieldVisitDateScript(ByRef Error As String, ByVal LocationIdentifier As String) As DataTable
+  DataTable dt
+  String error
+  String sql
+
+  sql = "SELECT d.endtime AS lastdate
+           FROM w_location l
+                LEFT JOIN w_dataset d
+                ON l.locationid = d.locationid
+          WHERE l.identifier = '" & LocationIdentifier & "'
+            AND d.label = 'WQCS'"
+
+  dt=DatabaseQuery(error, sql)
+  DashboardFieldVisitDateScript = dt
+End Function
