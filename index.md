@@ -1,6 +1,6 @@
 The St. Johns River Water Management District has an active continuous Water Quality monitoring network that is instrumented with YSI EXO2 Sondes with various probes (e.g., pH, Dissolved Oxygen) and Sea-Bird Scientific HydroCycle-PO4 phosphate sensors.  We have three field teams responsible from anywhere from 1 to 12 stations at any given time, with different sonde and probe/parameter configurations depending on project needs.
 
-### Status dashboards
+# Status dashboards
 
 I designed a special dashboard for field teams to assess the status of each station and the parameters deployed at each station to assist with station assessments and troubleshooting.
 
@@ -18,9 +18,9 @@ When a problem arises, the dashboard indicates a Status of **CHECK**, as shown b
 
 Field staff can then look at the *Hours Overdue*, *NANs or Suppressed*, and *Repeating Values* columns to determine what kind of problem may be occurring at the station.  In the example above, there are repeating values occurring in the Phosphate data stream, which can sometimes indicate that there is a fault in the sensor.
 
-### Building the Dashboard
+# Building the Dashboard
 
-#### Free Text or HTML widgets
+## Free Text or HTML widgets
 
 The first two blocks at the top of the dashboard are simple *Free Text or HTML* Widgets, containing simple HTML code like this:
 
@@ -56,11 +56,11 @@ dashboards for more information.</h3>
 </html>
 ```
 
-#### Grid (Script-Based) widgets
+## Grid (Script-Based) widgets
 
 The third row of widgets includes another *Free Text or HTML* widget and a *Grid (Script-Based)* widget to display a specific timestamp from a time series.
 
-##### Field Visit timestamp widget
+### Field Visit timestamp widget
 
 The *Grid (Script-Based)* widget relies on an SQL query in a script.  This is built with a combination of two scripts, one *Common* script that can be used by multiple widgets and another *Data Table* script that is specific to that station.
 
@@ -112,7 +112,7 @@ I created a Widget using the modified *Grid (Script-Based)* Widget Template, set
 
 ![](/images/ML02_FieldVisitBox.png)
 
-##### Status table widget
+### Status table widget
 
 The larger table is created using a similar process, with a more complex SQL query and additional formatting in the JavaScript block of the Widget Template.
 
