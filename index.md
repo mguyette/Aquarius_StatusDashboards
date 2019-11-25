@@ -1,8 +1,10 @@
-The St. Johns River Water Management District has an active continuous Water Quality monitoring network that is instrumented with YSI EXO2 Sondes with various probes (e.g., pH, Dissolved Oxygen) and Sea-Bird Scientific HydroCycle-PO4 phosphate sensors.  We have three field teams responsible from anywhere from 1 to 12 stations at any given time, with different sonde and probe/parameter configurations depending on project needs.
+The St. Johns River Water Management District has an active continuous Water Quality monitoring network that is instrumented with [YSI EXO2](https://www.ysi.com/EXO2) Sondes with various probes (e.g., pH, Dissolved Oxygen) and [Sea-Bird Scientific HydroCycle-PO4](https://www.seabird.com/hydrocycle-po/product?id=54721314201) phosphate sensors.  We have three field teams responsible from anywhere from 1 to 12 stations at any given time, with different sonde and probe/parameter configurations depending on project needs.
+
+It is important that we keep these stations running to support District projects, so we want to know when stations may need to be serviced.  I developed several different types of dashboards to help field staff stay on top of each of the stations, to assist with station assessments and troubleshooting.  One of these, the Status Dashboard, is designed to be the first step for field staff in their office-based station assessments.
 
 # Status dashboards
 
-I designed a special dashboard for field teams to assess the status of each station and the parameters deployed at each station to assist with station assessments and troubleshooting.
+At a glance, the Status Dashboard helps field staff determine whether a station may have communication, sonde, or probe problems.
 
 This is the basic layout of the dashboard:
 
@@ -299,3 +301,13 @@ Lastly, I modified the final line in the Widget Template, changing the setting f
 ```
 $("###WIDGETIDENTIFIER## .widget-box .grid .k-grid-header").show("font-size: 35px");
 ```
+
+Lastly, I created a Widget using the custom *Grid (Script-Based)* Widget Template for these larger tables, setting the GridId to Fixed and selecting the ML02 *Data Table* in the Value box.  The result is this widget on the dashboard:
+
+![](/images/ML02_StatusTable.png)
+
+I repeated this process for all stations and parameters, and assembled a custom dashboard for each project.
+
+# Closing thoughts
+
+Field staff use the Status Dashboards to routinely evaluate the status of each of the stations they are responsible for.  This is combined with Dashboards involving time series visualizations (graphs) to ensure that the continuous monitoring program keeps running smoothly.
