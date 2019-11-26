@@ -302,12 +302,12 @@ Lastly, I modified the final line in the Widget Template, changing the setting f
 $("###WIDGETIDENTIFIER## .widget-box .grid .k-grid-header").show("font-size: 35px");
 ```
 
-Lastly, I created a Widget using the custom *Grid (Script-Based)* Widget Template for these larger tables, setting the GridId to Fixed and selecting the ML02 *Data Table* in the Value box.  The result is this widget on the dashboard:
+Finally, I created a Widget using the custom *Grid (Script-Based)* Widget Template for these larger tables, setting the GridId to Fixed and selecting the ML02 *Data Table* in the Value box.  The result is this widget on the dashboard:
 
 ![](/images/ML02_StatusTable.png)
 
 I repeated this process for all stations and parameters, and assembled a custom dashboard for each project.
 
-# Closing thoughts
+# Dashboards in Use
 
-Field staff use the Status Dashboards to routinely evaluate the status of each of the stations they are responsible for.  This is combined with Dashboards involving time series visualizations (graphs) to ensure that the continuous monitoring program keeps running smoothly.
+Field staff use the Status Dashboards to routinely evaluate the status of each of the stations they are responsible for.  This is combined with Dashboards involving time series visualizations (graphs) to ensure that the continuous monitoring program keeps running smoothly.  
